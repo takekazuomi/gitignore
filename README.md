@@ -30,6 +30,15 @@ just run psake
 psake
 ```
 
+## Install
+
+I have not pushed to nuget yet. It must be built locally and installed.
+
+```powesehll
+psake Install
+```
+
+
 ## TODO
 
 I look for a better name.
