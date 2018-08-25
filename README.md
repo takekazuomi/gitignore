@@ -38,7 +38,6 @@ I have not pushed to nuget yet. It must be built locally and installed.
 psake Install
 ```
 
-
 ## TODO
 
 I look for a better name.
