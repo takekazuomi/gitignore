@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <PackAsTool>true</PackAsTool>
+    <PackageVersion>0.0.1</PackageVersion>
+    <Description>create .gitinore file from https://github.com/github/gitignore template</Description>
+    <Company />
+    <Authors>Takekazu Omi</Authors>
+    <Version>0.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Octokit" Version="0.31.0" />
+  </ItemGroup>
+</Project>
