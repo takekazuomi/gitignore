@@ -13,9 +13,9 @@ Task Pack -Depends Build {
 }
 
 Task Install -Depends Pack {
-    dotnet tool install gitignore --add-source "$build_dir/nupkg" --global
+    dotnet tool install kyrt.gitignore --add-source "$build_dir/nupkg" --global
     if(-not $?){
-        dotnet tool update gitignore --add-source "$build_dir/nupkg" --global
+        dotnet tool update kyrt.gitignore --add-source "$build_dir/nupkg" --global
     }
 }
 
