@@ -19,6 +19,7 @@ namespace gitignore
         private int _verbosity;
         private string _name;
         private bool _force;
+        private readonly string _version = typeof(Program).Assembly.GetName().Version.ToString();
 
         private async Task<IReadOnlyList<RepositoryContent>> GetGitHubContent()
         {
@@ -88,6 +89,7 @@ namespace gitignore
             var commands = new CommandSet("commands")
             {
                 "usage: gitignore COMMAND [OPTIONS]",
+                $"version: {_version}",
                 "",
                 "create .gitignore file from GitHub's github/gitignore repository app.",
                 "",

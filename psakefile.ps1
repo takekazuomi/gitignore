@@ -23,3 +23,8 @@ Task Push -Depends Pack {
     $n = (ls .\nupkg\ | Sort-Object -Property Name -Descending | Select-Object -First 1 -ExpandProperty Name)
     dotnet nuget push ".\nupkg\$n" -k "$Env:NUGET_API_KEY" -s https://www.nuget.org/
 }
+
+Task Clean {
+    rm -Recurse -Force "$build_dir/nupkg"  -ErrorAction SilentlyContinue
+    dotnet clean
+}
