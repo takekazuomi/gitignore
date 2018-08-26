@@ -332,3 +332,4 @@ ASALocalRun/
 .localhistory/
 
 tmp/
+.psenvrc
