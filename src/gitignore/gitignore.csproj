@@ -8,7 +8,7 @@
     <Version>0.0.5</Version>
     <Authors>Takekazu Omi</Authors>
     <Product>gitignore</Product>
-    <Copyright>MIT</Copyright>
+    <Copyright>Takekazu Omi</Copyright>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageLicenseUrl>https://github.com/takekazuomi/gitignore/blob/master/LICENSE.TXT</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/takekazuomi/gitignore/blob/master/README.md</PackageProjectUrl>
@@ -24,7 +24,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Octokit" Version="0.31.0" />
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta-63127-02" PrivateAssets="All"/>
+    <PackageReference Include="Octokit" Version="0.32.0" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta2-18618-05" PrivateAssets="All" />
   </ItemGroup>
 </Project>
