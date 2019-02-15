@@ -5,12 +5,12 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <Description>create .gitinore file from https://github.com/github/gitignore. </Description>
     <LangVersion>Latest</LangVersion>
-    <Version>0.0.5</Version>
+    <Version>0.0.6</Version>
     <Authors>Takekazu Omi</Authors>
     <Product>gitignore</Product>
     <Copyright>MIT</Copyright>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PackageLicenseUrl>https://github.com/takekazuomi/gitignore/blob/master/LICENSE.TXT</PackageLicenseUrl>
+    <License>https://github.com/takekazuomi/gitignore/blob/master/LICENSE.TXT</License>
     <PackageProjectUrl>https://github.com/takekazuomi/gitignore/blob/master/README.md</PackageProjectUrl>
     <PackageId>kyrt.gitignore</PackageId>
     <AssemblyName>gitignore</AssemblyName>
@@ -24,7 +24,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Octokit" Version="0.31.0" />
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta-63127-02" PrivateAssets="All"/>
+    <PackageReference Include="Octokit" Version="0.32.0" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta2-18618-05" PrivateAssets="All" />
   </ItemGroup>
 </Project>

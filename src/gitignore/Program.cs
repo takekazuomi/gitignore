@@ -19,6 +19,7 @@ namespace gitignore
         private int _verbosity;
         private string _name;
         private bool _force;
+        private bool _append;
         private readonly string _version = typeof(Program).Assembly.GetName().Version.ToString();
 
         private async Task<IReadOnlyList<RepositoryContent>> GetGitHubContent()
@@ -39,9 +40,9 @@ namespace gitignore
                 Console.Error.WriteLine("Missing template name -n option."); return 1;
             }
 
-            if (File.Exists(Dotgitignore) && !_force)
+            if (File.Exists(Dotgitignore) && !_force && !_append)
             {
-                Console.Error.WriteLine(".gitignore already exsist. To overwrite, add -f."); return 1;
+                Console.Error.WriteLine(".gitignore already exsist. To overwrite, add -f. Or To append, add -a."); return 1;
             }
 
             var contents = await GetGitHubContent();
@@ -55,8 +56,11 @@ namespace gitignore
                 return 1;
             }
 
-            using (var file = File.Create(Dotgitignore))
+            using (var file = _append && File.Exists(Dotgitignore) ? File.OpenWrite(Dotgitignore) : File.Create(Dotgitignore))
             {
+                if (_append)
+                    file.Seek(0, SeekOrigin.End);
+
                 using (var client = new HttpClient())
                 {
                     var msg = await client.GetAsync(url);
@@ -123,7 +127,12 @@ namespace gitignore
                             "force|f",
                             "force exisiting .gitignore file.",
                             n => _force = n != null
-                        }
+                        },
+                        {
+                        "append|a",
+                        "append to exisiting .gitignore file.",
+                        n => _append = n != null
+                    }
 
                     },
                     Run = ca => RunCreateAsync().Wait()
