@@ -10,7 +10,7 @@
     <Product>gitignore</Product>
     <Copyright>Takekazu Omi</Copyright>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PackageLicenseUrl>https://github.com/takekazuomi/gitignore/blob/master/LICENSE.TXT</PackageLicenseUrl>
+    <License>https://github.com/takekazuomi/gitignore/blob/master/LICENSE.TXT</License>
     <PackageProjectUrl>https://github.com/takekazuomi/gitignore/blob/master/README.md</PackageProjectUrl>
     <PackageId>kyrt.gitignore</PackageId>
     <AssemblyName>gitignore</AssemblyName>

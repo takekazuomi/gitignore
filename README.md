@@ -3,6 +3,14 @@
 Bring .gitignore from [github/gitignore](https://github.com/github/gitignore) on GitHub. .NET Core Global Tools
 Application.
 
+## Installation
+
+Download and install the [.NET Core 2.2 SDK](https://www.microsoft.com/net/download) or newer. Once installed, run the following command:
+
+```bash
+dotnet tool install --global kyrt.gitignore
+```
+
 ## Usage
 
 ```powesehll
