@@ -4,8 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{751477F3-AF2E-4861-A4BC-D3A2E8954681}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE.TXT = LICENSE.TXT
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gitignore", "src\gitignore\gitignore.csproj", "{3CF9847B-BF0C-4B55-9B81-25EDA6EAA8A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "gitignore", "src\gitignore\gitignore.csproj", "{3CF9847B-BF0C-4B55-9B81-25EDA6EAA8A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +18,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{3CF9847B-BF0C-4B55-9B81-25EDA6EAA8A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -33,7 +33,13 @@ Global
 		{3CF9847B-BF0C-4B55-9B81-25EDA6EAA8A0}.Release|x86.ActiveCfg = Release|Any CPU
 		{3CF9847B-BF0C-4B55-9B81-25EDA6EAA8A0}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3CF9847B-BF0C-4B55-9B81-25EDA6EAA8A0} = {751477F3-AF2E-4861-A4BC-D3A2E8954681}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5977BD0-ADAE-4F2E-9B9D-DC8694DADD3D}
 	EndGlobalSection
 EndGlobal
